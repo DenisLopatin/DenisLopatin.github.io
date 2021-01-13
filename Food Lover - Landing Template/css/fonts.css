@@ -1,0 +1,11 @@
+/*
+ * Подключение основного шрифта для страницы
+*/
+
+@font-face {
+    font-family: SuezOne;
+    src: url("../fonts/SuezOne/SuezOne-Regular.woff2") format("woff2"),
+         url("../fonts/SuezOne/SuezOne-Regular.woff") format("woff"),
+         url("../fonts/SuezOne/SuezOne-Regular.ttf") format("ttf");
+}
+
