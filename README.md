@@ -2,6 +2,7 @@
 
 [Food Lover](https://denislopatin.github.io/Food%20Lover%20-%20Landing%20Template/):
 
+* Первый макет который я сверстал
 * Нативный css и js. 
 * Полифилы для js с MDN. 
 * Поддержка IE11. 
