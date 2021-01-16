@@ -1,5 +1,12 @@
 # DenisLopatin.github.io
 
+[Page Scroll Indicator](https://denislopatin.github.io/Scroll-Page-Indicator/):
+
+Небольшой плагин для сайта устанавливающий индикатор прокрутки страницы.
+
+* Кроссбраузерный плагин (IE9+)
+* Плагин предоставляет функцию для настройки
+
 [Food Lover](https://denislopatin.github.io/Food%20Lover%20-%20Landing%20Template/):
 
 * Первый макет который я сверстал
