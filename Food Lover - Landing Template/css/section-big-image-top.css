@@ -1,0 +1,105 @@
+/*
+ * Модуль секции большого изображения сверху
+*/
+
+.big-image-top {
+    position: relative;
+    overflow: hidden;
+    background-color: #1d1d23;
+}
+
+.big-image-right-img {
+    position: relative;
+    z-index: 2;
+    float: right;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+    .big-image-right-img {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .big-image-right-img {
+        display: none;
+    }
+}
+
+.big-image-mid-img {
+    position: absolute;
+    z-index: 4;
+    top: 810px;
+    right: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .big-image-mid-img {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .big-image-mid-img {
+        opacity: 0.25;
+    }
+}
+
+.big-image-left-img {
+    position: absolute;
+    z-index: 3;
+    top: 1200px;
+}
+
+.big-image-snake-img {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+}
+
+.big-image-content {
+    position: absolute;
+    z-index: 5;
+    top: 510px;
+    left: 200px;
+    width: 530px;
+    color: white;
+}
+
+@media screen and (max-width: 1280px) {
+    .big-image-content {
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .big-image-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 100px 0;
+    }
+}
+
+.big-image-content-heading {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .big-image-content-heading {
+        padding: 0 20px 20px;
+    }
+}
+
+.big-image-content-text {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .big-image-content-text {
+        padding: 0 20px;
+    }
+}

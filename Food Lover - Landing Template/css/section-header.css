@@ -1,0 +1,375 @@
+/*
+ * Модуль шапки сайта
+*/
+
+.header {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/header-image.jpg);
+    background-color: rgba(40, 40, 45, 0.95);
+}
+
+.header::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(40, 40, 45);
+    opacity: 0.9;
+}
+
+/*
+ * Если поддерживает background-blend-mode, то использовать его
+ * и удалить псевдо-элемент
+*/
+
+@supports (background-blend-mode: hue) {
+    .header {
+        background-blend-mode: hue;
+    }
+
+    .header::after {
+        content: initial;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .header {
+        overflow: hidden;
+    }
+}
+
+.navigation {
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 42px;
+    margin-right: 160px;
+}
+
+@media screen and (max-width: 725px) {
+    .navigation {
+        opacity: 0;
+    }
+
+    .navigation-show {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1485px) {
+    .navigation {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .navigation {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .navigation {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+}
+
+.navigation-list {
+    margin-bottom: 40px;
+}
+
+/*
+ * Порядок важен для JS скрипта
+*/
+
+.navigation-list:nth-child(1) {
+    order: 1;
+}
+
+.navigation-list:nth-child(2) {
+    order: 2;
+}
+
+.navigation-list:nth-child(3) {
+    order: 3;
+}
+
+.navigation-list:nth-child(4) {
+    order: 4;
+}
+
+.navigation-list:nth-child(5) {
+    order: 6;
+}
+
+.navigation-list:nth-child(6) {
+    order: 7;
+}
+
+.navigation-list:nth-child(7) {
+    order: 8;
+}
+
+.navigation-list:nth-child(8) {
+    order: 5;
+}
+
+@media screen and (max-width: 1290px) {
+    .navigation-list {
+        margin-right: 40px;
+    }
+
+    .navigation-list:nth-child(7) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .navigation-list {
+        margin-right: 20px;
+    }
+
+    .navigation-list:nth-child(7) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .navigation-list {
+        margin: 0 0 20px 0;
+    }
+
+    .navigation-list:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.navigation-logo {
+    flex-basis: 400px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 970px) {
+    .navigation-logo {
+        flex-basis: auto;
+        margin-left: auto;
+        margin-right: 0;
+        order: 10 !important;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .navigation-logo-img {
+        flex-basis: initial;
+        order: initial;
+        float: right;
+        margin: 10px 15px;
+        transition: opacity 2s;
+    }
+
+    .navigation-logo-img-is-hide {
+        opacity: 0;
+    }
+}
+
+.navigation-link {
+    color: white;
+    transition: box-shadow 300ms;
+}
+
+.navigation-link:hover {
+    color: #c28a35;
+}
+
+.navigation-link:focus {
+    box-shadow: 0 5px 0 #c28a35;
+}
+
+.header-info {
+    height: 600px;
+    display: flex;
+    padding-top: 120px;
+}
+
+@media screen and (max-width: 1280px) {
+    .header-info {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .header-info {
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+    }
+}
+
+.header-info-img {
+    width: 640px;
+    height: 490px;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+    .header-info-img {
+        position: absolute;
+        opacity: 0.2;
+        z-index: 1;
+    }
+}
+
+.header-info-content {
+    width: 550px;
+    padding-top: 48px;
+    padding-left: 48px;
+}
+
+@media screen and (max-width: 1280px) {
+    .header-info-content {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 0 20px 20px;
+    }
+}
+
+.header-info-heading {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #c28a35;
+}
+
+@media screen and (max-width: 725px) {
+    .header-info-heading {
+        font-size: 3rem;
+    }
+}
+
+.header-info-text {
+    padding-top: 25px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+@media screen and (max-width: 530px) {
+    .header-info-text {
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+}
+
+.header-info-btn {
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    word-spacing: 5px;
+    font-family: "SuezOne", serif;
+    border-radius: 0.25rem;
+    background-color: #c28a35;
+    cursor: pointer;
+}
+
+.header-info-btn:focus {
+    box-shadow: 0 0 5px 1px #c28a35;
+}
+
+.burger {
+    z-index: 20;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    transition: transform 2s, left 2s;
+}
+
+.burger-is-right {
+    left: 80%;
+}
+
+.burger-line {
+    flex-basis: 15px;
+    border: 1px solid #c28a35;
+    box-shadow: 0 0 2px;
+    transition: transform 400ms;
+}
+
+.burger-line-is-translate {
+    transform: translateX(-10px);
+}
+
+.burger-menu {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right, black, transparent);
+    transition: right 2s, width 2s;
+}
+
+.burger-menu-is-show {
+    width: 100%;
+    opacity: 1;
+}
+
+/*
+ * Если не ie 11 использовать другую анимацию
+*/
+
+@supports (--not-ie: true) {
+    .burger-menu {
+        overflow: initial;
+        right: 0;
+        transform: translateX(-100vw);
+        transition: transform 2s;
+    }
+
+    .burger-menu-is-show {
+        width: auto;
+        transform: translateX(0);
+    }
+
+    .burger-is-right {
+        transform: translateX(80vw);
+        left: 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        .burger-is-right {
+            transform: translateX(75vw);
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .burger-is-right {
+            transform: translateX(70vw);
+        }
+    }
+}
+
+.document-overflow-hidden {
+    overflow-y: hidden;
+}
