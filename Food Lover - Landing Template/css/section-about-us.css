@@ -1,0 +1,83 @@
+/*
+ * Модуль секции "о нас"
+*/
+
+.about-us {
+    background-color: #1d1d23;
+}
+
+.about-us-info {
+    display: flex;
+}
+
+@media screen and (max-width: 1485px) {
+    .about-us-info {
+        position: relative;
+        overflow: hidden;
+        justify-content: flex-end;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .about-us-info {
+        justify-content: center;
+    }
+}
+
+.about-us-img {
+    flex-basis: 645px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 1485px) {
+    .about-us-img {
+        position: absolute;
+        left: 0;
+        opacity: 0.25;
+        flex-basis: initial;
+        margin-right: initial;
+    }
+}
+
+@media screen and (max-width: 1485px) {
+    .about-us-img {
+        width: 100%;
+    }
+}
+
+.about-us-content {
+    flex-basis: 535px;
+    height: auto;
+    color: white;
+}
+
+@media screen and (max-width: 1485px) {
+    .about-us-content {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1485px) {
+    .about-us-content {
+        padding: 0 20px;
+    }
+}
+
+.about-us-heading {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 115px;
+}
+
+.about-us-text {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+@media screen and (max-width: 725px) {
+    .about-us-text {
+        line-height: 1.4;
+        font-size: 1.7rem;
+    }
+}

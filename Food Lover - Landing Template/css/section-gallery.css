@@ -1,0 +1,63 @@
+/*
+ * Модуль секции галлереи
+*/
+
+.gallery {
+    background-color: #1d1d23;
+}
+
+.gallery-heading {
+    padding-bottom: 90px;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 1280px) {
+    .gallery-heading {
+        padding-bottom: 30px;
+    }
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.gallery-images-img:nth-child(1n + 4) {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1485px) {
+    .gallery-images {
+        justify-content: space-around;
+    }
+
+    .gallery-images-img:nth-child(1n + 3) {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .gallery-images-img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .gallery-images {
+        padding: 0 20px;
+    }
+
+    .gallery-images-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .gallery-images-img:nth-child(even) {
+        margin-top: 30px;
+    }
+}
