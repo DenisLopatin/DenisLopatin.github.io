@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .slider {
+            display: flex;
+            max-width: 500px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .ranges {
+            flex: 1;
+        }
+        .range {
+            margin-bottom: 20px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .content {
+            flex: 1;
+            margin-left: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="ui-button" data-for="color" data-select="true">Color</button>
+    <button class="ui-button" data-for="background-color">Background-color</button>
+
+    <div class="slider">
+        <div class="ranges">
+            <div class="range red" data-color="red"></div>
+            <div class="range green" data-color="green"></div>
+            <div class="range blue" data-color="blue"></div>
+        </div>
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad mollitia.
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
