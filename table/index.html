@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <button class="button" data-get="table">Получить таблицу</button>
+        <button class="button" data-fill="table" disabled>Получить пользователей</button>
+        <button class="button" data-show="menu" disabled>Меню</button>
+        <div class="menu">
+            <label class="label">
+                <span class="label-text">Номер строки для внесения изменений</span>
+                <input type="number" data-change="line" placeholder="Напрмер: 7">
+            </label>
+            <label class="label">
+                <span class="label-text">Значение, которое будет изменено</span>
+                <input type="text" data-change="old-value" placeholder="Напрмер: Name, Age или Country">
+            </label>
+            <label class="label">
+                <span class="label-text">Введите новое значение</span>
+                <input type="text" data-change="new-value" placeholder="Напрмер: Alex для поля Name или 4 для ID" disabled>
+            </label>
+        </div>
+    </div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

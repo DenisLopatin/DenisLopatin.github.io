@@ -1,0 +1,94 @@
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+.button {
+    border: 1px solid darkgray;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: inherit;
+    font-family: inherit;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: white;
+    color: rgb(53, 53, 53);
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 180ms;
+}
+
+.button:hover {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.button:focus {
+    box-shadow: 0 0 2px 5px aquamarine;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sort {
+    border: 5px solid rgb(53, 53, 53);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 14px;
+    margin-left: 15px;
+    transition: transform 180ms, top 180ms;
+    transform: rotate(270deg);
+}
+
+thead:hover .sort {
+    border-top-color: white;
+}
+
+.sort-bottom {
+    transform: rotate(0);
+    top: 17px;
+}
+
+.sort-top {
+    transform: rotate(180deg);
+    top: 12px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    padding-left: 20px;
+}
+
+.menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.is-menu-open {
+    height: 192px;
+}
+
+.input-success {
+    border-color: rgb(22, 209, 22);
+}
+
+.input-error {
+    border-color: red;
+}
