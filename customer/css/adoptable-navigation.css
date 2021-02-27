@@ -1,0 +1,113 @@
+.burger {
+    display: none;
+}
+
+.navbar-mobile {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+    /* Корректировка стилей для меню */
+
+    .divider.navbar-divider {
+        display: none;
+    }
+
+    .navbar-container {
+        padding-left: 0 !important;
+    }
+
+    .navbar__top {
+        display: none;
+    }
+
+    #navbarMenuCollapse.navbar-collapse {
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+
+    #navbarMenuCollapse.collapse:not(.show) {
+        display: block;
+    }
+
+    .navbar-text {
+        display: block;
+        width: auto !important;
+        border-bottom: 1px solid darkgray;
+        padding-left: 15px;
+        color: white !important;
+    }
+
+    .nav-item {
+        padding-left: 15px;
+        text-align: left !important;
+        color: white;
+    }
+
+    .nav-link {
+        color: #dcd9d9 !important;
+    }
+
+    .nav-item:hover > .nav-link::after,
+    .active > .nav-link::after {
+        content: none !important;
+    }
+
+    .navbar-light .navbar-nav .active > .nav-link {
+        color: #4394f9 !important;
+    }
+
+    .navbar-nav-mob {
+        width: auto !important;
+    }
+
+        /* Стили меню */
+    .navbar-mobile {
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        overflow-y: scroll;
+        height: 90vh;
+        width: 70vw;
+        margin-top: -1px;
+        background-color: #222222;
+        transform: translateX(-70vw);
+        transition: transform 900ms;
+    }
+
+    .burger {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 15px;
+    }
+
+    .burger__line {
+        background: #dcd9d9;
+        flex-basis: 3px;
+    }
+
+    .burger__line-middle {
+        width: 60%;
+        transition: width 300ms;
+    }
+
+    /* js состояния */
+    .is-overflow-y-hidden {
+        overflow-y: hidden;
+    }
+
+    .is-body-bg-color {
+        background-color: #636363;
+    }
+
+    .is-menu-show {
+        transform: translateX(0);
+    }
+
+    .is-w-100 {
+        width: 100%;
+    }
+}
