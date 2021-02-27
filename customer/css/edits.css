@@ -1,9 +1,0 @@
-.article-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.post-meta-a.rounded {
-    margin: 5px 0;
-}
