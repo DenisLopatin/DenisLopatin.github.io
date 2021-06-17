@@ -8,7 +8,7 @@
  * @function request - the generator function simulating the operation of async await
  * @param {string} url - url address
  * @returns {undefined}
- * */
+ */
 
 function* request(url) {
     try {
@@ -49,7 +49,7 @@ const iterator = request('http://jsonplaceholder.typicode.com/users');
 iterator.next();
 
 // You can use a special function for this - request
-// It accepts a generator function, a url, and a callback funct
+// It accepts a generator function, a url, and a callback function
 // Returns a Promise, but you can ignore it and pass all the logic of working with the received data to the callback function
 // Both options are possible
 
