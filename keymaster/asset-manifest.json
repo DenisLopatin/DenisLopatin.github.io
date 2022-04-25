@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./static/css/main.9da49b04.css",
+    "main.js": "./static/js/main.076ae1f8.js",
+    "static/media/auto-key.jpg": "./static/media/auto-key.98368f887b5c35d4454d.jpg",
+    "static/media/Rounded Mplus 1c.woff2": "./static/media/Rounded Mplus 1c.95f1ff9892851058dec5.woff2",
+    "static/media/slide-1.jpg": "./static/media/slide-1.df9a473da6de4a9eb624.jpg",
+    "static/media/gallery-4.png": "./static/media/gallery-4.bc1991fa2474547f20ae.png",
+    "static/media/slide-2.jpg": "./static/media/slide-2.5c4cd5b2830eaca2c7cd.jpg",
+    "static/media/slide-5.jpg": "./static/media/slide-5.c7a43aa29dd36e125d8b.jpg",
+    "static/media/gallery-6.jpg": "./static/media/gallery-6.b9040228a32d53b5d609.jpg",
+    "static/media/gallery-5.jpg": "./static/media/gallery-5.6ed3c27afab2489a297a.jpg",
+    "static/media/gallery-2.jpg": "./static/media/gallery-2.8bd052be62968c41eefa.jpg",
+    "static/media/Alegreya SC Regular.woff2": "./static/media/Alegreya SC Regular.026b141be0520dc8cea4.woff2",
+    "static/media/bootstrap-icons.woff2?": "./static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
+    "static/media/slide-3.jpg": "./static/media/slide-3.ec1e2ca8cca73c2da625.jpg",
+    "static/media/remote-controller.jpg": "./static/media/remote-controller.5e5c884a7671674d5384.jpg",
+    "static/media/repair-watch.jpg": "./static/media/repair-watch.5a035c6cd3d97cbeddb0.jpg",
+    "static/media/gallery-1.jpg": "./static/media/gallery-1.b40eecceeaece3dff0ae.jpg",
+    "static/media/gallery-3.jpg": "./static/media/gallery-3.0e2820935659cb67ea18.jpg",
+    "static/media/slide-4.jpg": "./static/media/slide-4.123b36aa38dd08869189.jpg",
+    "static/media/replacing-battery.jpg": "./static/media/replacing-battery.d49583785434dffde2d7.jpg",
+    "static/media/dom-key.jpeg": "./static/media/dom-key.af1b44b8a5cd414d5112.jpeg",
+    "static/media/Jura.woff2": "./static/media/Jura.4a7c8dbcbd36e9dd21c0.woff2",
+    "static/media/Seymour One.woff2": "./static/media/Seymour One.a990b0be37a80499c1ac.woff2",
+    "static/media/keys.jpg": "./static/media/keys.78053d5c395b8dbfb4d9.jpg",
+    "static/media/Russo One.woff2": "./static/media/Russo One.585b0f8ae6170b772276.woff2",
+    "index.html": "./index.html",
+    "main.9da49b04.css.map": "./static/css/main.9da49b04.css.map",
+    "main.076ae1f8.js.map": "./static/js/main.076ae1f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9da49b04.css",
+    "static/js/main.076ae1f8.js"
+  ]
+}
