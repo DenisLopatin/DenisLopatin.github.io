@@ -94,9 +94,9 @@ ul {
 }
 
 .favourite-empty {
-    background-image: url("/img/favourite.svg");
+    background-image: url("../img/favourite.svg");
 }
 
 .favourite-fill {
-    background-image: url("/img/favourite-fill.svg");
+    background-image: url("../img/favourite-fill.svg");
 }
